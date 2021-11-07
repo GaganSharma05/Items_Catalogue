@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_catalogue/home.dart';
-import 'package:flutter_catalogue/login_page.dart';
+import 'package:flutter/material.dart' ;
+//import 'package:flutter_catalogue/home.dart';
+import 'package:flutter_catalogue/pages/login_page.dart';
+import 'package:flutter_catalogue/'
 
 void main() {
   runApp(OTLogin());
@@ -12,9 +13,10 @@ class OTLogin extends StatelessWidget {
     return MaterialApp(
         themeMode: ThemeMode.light,
         theme: ThemeData(primarySwatch: Colors.indigo),
+        initialRoute: "\login",
         routes: {
-          "/": (context) => Homepage(),
-          "/login": (context) => Login_Page()
+          "/": (context) => Login_Page(),
+          //  "/login": (context) => Login_Page()
         });
   }
 }
