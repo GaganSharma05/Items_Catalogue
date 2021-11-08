@@ -9,7 +9,7 @@ class Login_Page extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              "\Assets\Images\Authentication.png",
+              "\Assets\Authentication.png",
               fit: BoxFit.cover,
             ),
             SizedBox(
