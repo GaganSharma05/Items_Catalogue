@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalogue/utils/MyRoutes.dart';
 
 // ignore: camel_case_types
 class Login_Page extends StatelessWidget {
@@ -48,9 +49,10 @@ class Login_Page extends StatelessWidget {
                   ),
                   ElevatedButton(
                     child: Text("Login"),
-                    style: TextButton.styleFrom(),
+                    style:
+                        TextButton.styleFrom(minimumSize: Size(100.00, 50.00)),
                     onPressed: () {
-                      print("Hi Codepur");
+                      Navigator.pushNamed(context, MyRoutes.homeRoute);
                     },
                   )
                 ],
