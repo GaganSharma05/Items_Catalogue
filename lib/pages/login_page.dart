@@ -9,7 +9,7 @@ class Login_Page extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(
-              "C:\Users\gagan\AndroidStudioProjects\Catalogue\flutter_catalogue\Assets\Images\Authentication.png",
+              "\Assets\Images\Authentication.png",
               fit: BoxFit.cover,
             ),
             SizedBox(
