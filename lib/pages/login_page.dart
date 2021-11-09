@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_catalogue/utils/MyRoutes.dart';
 
 // ignore: camel_case_types
-class Login_Page extends StatelessWidget {
+class Login_Page extends StatefulWidget {
+  @override
+  _Login_PageState createState() => _Login_PageState();
+}
+
+// ignore: camel_case_types
+class _Login_PageState extends State<Login_Page> {
+  String name = "";
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -32,11 +39,14 @@ class Login_Page extends StatelessWidget {
               child: Column(
                 children: [
                   TextFormField(
-                    decoration: InputDecoration(
-                      hintText: "Enter username",
-                      labelText: "Username",
-                    ),
-                  ),
+                      decoration: InputDecoration(
+                        hintText: "Enter username",
+                        labelText: "Username",
+                      ),
+                      onChanged: (value) {
+                        value = name;
+                        setState(() {});
+                      }),
                   TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
