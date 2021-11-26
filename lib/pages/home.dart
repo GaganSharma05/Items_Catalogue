@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalogue/widgets/drawer.dart';
 
 class Homepage extends StatelessWidget {
   final String name = "Vegetables";
@@ -12,7 +13,7 @@ class Homepage extends StatelessWidget {
       body: Center(
         child: Container(child: Text("Welcome to Online shopping $name")),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
