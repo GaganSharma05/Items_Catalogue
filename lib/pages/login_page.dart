@@ -43,6 +43,12 @@ class _Login_PageState extends State<Login_Page> {
                         hintText: "Enter username",
                         labelText: "Username",
                       ),
+                      validator: (value) {
+                        if (value.isEmpty) {
+                          return "Username cannot be empty";
+                        }
+                        return null;
+                      },
                       onChanged: (value) {
                         value = name;
                         setState(() {});
@@ -53,6 +59,14 @@ class _Login_PageState extends State<Login_Page> {
                       hintText: "Enter password",
                       labelText: "Password",
                     ),
+                    validator: (value) {
+                      if (value.isEmpty) {
+                        return "Password cannot be empty";
+                      } else if (value.length < 6) {
+                        return "Password length should be atleast 6";
+                      }
+                      return null;
+                    },
                   ),
                   SizedBox(
                     height: 20.0,

@@ -20,46 +20,45 @@ class MyDrawer extends StatelessWidget {
                   backgroundImage: AssetImage("assets/images/face.jpg"),
                 ),
               )),
-              ListTile(
-              leading: Icon(
-                CupertinoIcons.home,
+          ListTile(
+            leading: Icon(
+              CupertinoIcons.home,
+              color: Colors.white,
+            ),
+            title: Text(
+              "Home",
+              textScaleFactor: 1.2,
+              style: TextStyle(
                 color: Colors.white,
-              ),
-              title: Text(
-                "Home",
-                textScaleFactor: 1.2,
-                style: TextStyle(
-                  color: Colors.white,
-                ),
               ),
             ),
-            ListTile(
-              leading: Icon(
-                CupertinoIcons.profile_circled,
+          ),
+          ListTile(
+            leading: Icon(
+              CupertinoIcons.profile_circled,
+              color: Colors.white,
+            ),
+            title: Text(
+              "Profile",
+              textScaleFactor: 1.2,
+              style: TextStyle(
                 color: Colors.white,
-              ),
-              title: Text(
-                "Profile",
-                textScaleFactor: 1.2,
-                style: TextStyle(
-                  color: Colors.white,
-                ),
               ),
             ),
-            ListTile(
-              leading: Icon(
-                CupertinoIcons.money_dollar_circle
+          ),
+          ListTile(
+            leading: Icon(
+              CupertinoIcons.money_dollar_circle,
+              color: Colors.white,
+            ),
+            title: Text(
+              "Account",
+              textScaleFactor: 1.2,
+              style: TextStyle(
                 color: Colors.white,
               ),
-              title: Text(
-                "Account",
-                textScaleFactor: 1.2,
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-            )
-
+            ),
+          )
         ],
       ),
     ));
