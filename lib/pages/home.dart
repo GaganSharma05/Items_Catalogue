@@ -8,10 +8,11 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Onlne Tutorial"),
+        title: Text("Online Tutorial"),
       ),
       body: Center(
-        child: Container(child: Text("Welcome to Online tutorial $name")),
+        child:
+            Container(child: Text("Hello $name - Welcome to Online tutorial")),
       ),
       drawer: MyDrawer(),
     );
