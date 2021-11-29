@@ -10,11 +10,30 @@ class Login_Page extends StatefulWidget {
 // ignore: camel_case_types
 class _Login_PageState extends State<Login_Page> {
   String name = "";
+  bool changeButton = false;
+
+  final _formKey = GlobalKey<FormState>();
+
+  moveToHome(BuildContext context) async {
+    if (_formKey.currentState.validate()) {
+      setState(() {
+        changeButton = true;
+      });
+      await Future.delayed(Duration(seconds: 1));
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
+      setState(() {
+        changeButton = false;
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Material(
         color: Colors.white,
-        child: Column(
+        child: SingleChildScrollView(
+            child: Form(
+                child: Column(
           children: [
             Image.asset(
               "assets/images/Authentication.png",
@@ -83,6 +102,6 @@ class _Login_PageState extends State<Login_Page> {
               ),
             )
           ],
-        ));
+        ))));
   }
 }
