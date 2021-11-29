@@ -33,26 +33,25 @@ class _Login_PageState extends State<Login_Page> {
         color: Colors.white,
         child: SingleChildScrollView(
             child: Form(
-                child: Column(
-          children: [
-            Image.asset(
-              "assets/images/Authentication.png",
-              fit: BoxFit.cover,
+                child: Column(children: [
+          Image.asset(
+            "assets/images/Authentication.png",
+            fit: BoxFit.cover,
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          Text(
+            "Welcome",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
             ),
-            SizedBox(
-              height: 20.0,
-            ),
-            Text(
-              "Welcome",
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            Padding(
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32.0),
               child: Column(
@@ -90,18 +89,33 @@ class _Login_PageState extends State<Login_Page> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  ElevatedButton(
-                    child: Text("Login"),
-                    style:
-                        TextButton.styleFrom(minimumSize: Size(100.00, 50.00)),
-                    onPressed: () {
-                      Navigator.pushNamed(context, MyRoutes.homeRoute);
-                    },
+                  Material(
+                    color: Colors.deepPurple,
+                    borderRadius: BorderRadius.circular(changeButton ? 50 : 8),
+                    child: InkWell(
+                      onTap: () => moveToHome(context),
+                      child: AnimatedContainer(
+                        duration: Duration(seconds: 1),
+                        width: changeButton ? 50 : 150,
+                        height: 50,
+                        alignment: Alignment.center,
+                        child: changeButton
+                            ? Icon(
+                                Icons.done,
+                                color: Colors.white,
+                              )
+                            : Text(
+                                "Login",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18),
+                              ),
+                      ),
+                    ),
                   )
                 ],
-              ),
-            )
-          ],
-        ))));
+              ))
+        ]))));
   }
 }
