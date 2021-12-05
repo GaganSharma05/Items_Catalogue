@@ -2,27 +2,27 @@
     "products": [
         {
             "id": 1,
-            "name": "iPhone 12 Pro",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999,
+            "course": "BA/Economics Honors - Macro Economics",
+            "desc": "Economics for arts students in Indian universities",
+            "price": 500,
             "color": "#33505a",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISJ6msIu4AU9_M9ZnJVQVFmfuhfyJjEtbUm3ZK11_8IV9TV25-1uM5wHjiFNwKy99w0mR5Hk&usqp=CAc"
+            "image": "https://images.app.goo.gl/HoxL4Ac9oBe3SQfv6"
         },
         {
             "id": 2,
-            "name": "Pixel 5",
-            "desc": "Google Pixel phone 5th generation",
-            "price": 699,
+            "name": "LSE/Economics - Macro Economics",
+            "desc": "Economics for LSE students",
+            "price": 700,
             "color": "#00ac51",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd0JhwLvm_uLDLc-la7hK9WyVpe9naJFcebKfhcICiq2KtvXDePNAU_9QO06LPcQ0K0fLByc7m&usqp=CAc"
+            "image": "https://images.app.goo.gl/m3R1P2oG3WunYqvq8"
         },
         {
             "id": 3,
-            "name": "M1 Macbook Air",
-            "desc": "Apple Macbook air with apple silicon",
-            "price": 1099,
+            "name": "Data Science",
+            "desc": "Data science for enginnering students",
+            "price": 700,
             "color": "#e0bfae",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"
+            "image": "https://images.app.goo.gl/Se4rwN7MtWrRUbNA7"
         },
         {
             "id": 4,
