@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_catalogue/modules/catalogue.dart';
 import 'package:flutter_catalogue/widgets/drawer.dart';
+import 'package:flutter_catalogue/widgets/item_widgets.dart';
 
 class Homepage extends StatefulWidget {
   @override
