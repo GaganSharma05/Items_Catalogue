@@ -36,9 +36,18 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         title: Text("Online Tutorial"),
       ),
-      body: Center(
-        child:
-            Container(child: Text("Hello $name - Welcome to Online tutorial")),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+            ? ListView.builder(
+                itemCount: CatalogModel.items.length,
+                itemBuilder: (context, index) => ItemWidget(
+                  item: CatalogModel.items[index],
+                ),
+              )
+            : Center(
+                child: CircularProgressIndicator(),
+              ),
       ),
       drawer: MyDrawer(),
     );
