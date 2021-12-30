@@ -2,11 +2,11 @@
     "products": [
         {
             "id": 1,
-            "course": "BA/Economics Honors - Macro Economics",
+            "name": "BA/Economics Honors - Macro Economics",
             "desc": "Economics for arts students in Indian universities",
             "price": 500,
             "color": "#33505a",
-            "image": "https://images.app.goo.gl/HoxL4Ac9oBe3SQfv6"
+            "image": "https://us.123rf.com/450wm/yokieyok/yokieyok1904/yokieyok190400001/121182804-circular-economy-product-is-recycled-management-concept-.jpg"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "desc": "Economics for LSE students",
             "price": 700,
             "color": "#00ac51",
-            "image": "https://images.app.goo.gl/m3R1P2oG3WunYqvq8"
+            "image": "https://previews.123rf.com/images/djvstock/djvstock1509/djvstock150900826/44610197-business-money-profits-and-global-economy-vector-illustration.jpg"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "desc": "Data science for enginnering students",
             "price": 700,
             "color": "#e0bfae",
-            "image": "https://images.app.goo.gl/Se4rwN7MtWrRUbNA7"
+            "image": "https://wallpapercave.com/wp/wp9684493.jpg"
         },
         {
             "id": 4,
