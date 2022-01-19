@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_catalogue/modules/catalogue.dart';
+import 'package:flutter_catalogue/models/catalogue.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class ItemBuyDetail extends StatelessWidget {

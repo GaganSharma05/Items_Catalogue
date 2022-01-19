@@ -2,9 +2,10 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_catalogue/modules/catalogue.dart';
+import 'package:flutter_catalogue/models/catalogue.dart';
 import 'package:flutter_catalogue/widgets/drawer.dart';
-import 'package:flutter_catalogue/pages/item_buy_detail.dart' show ItemBuyDetail;
+import 'package:flutter_catalogue/pages/item_buy_detail.dart'
+    show ItemBuyDetail;
 import 'package:velocity_x/velocity_x.dart';
 import 'package:flutter_catalogue/utils/MyRoutes.dart';
 
@@ -41,14 +42,14 @@ class _HomepageState extends State<Homepage> {
         title: Text("Online Tutorial"),
       ),
       backgroundColor: context.canvasColor,
-        floatingActionButton: FloatingActionButton(
-          onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-          backgroundColor: context.theme.buttonColor,
-          child: Icon(
-            CupertinoIcons.cart,
-            color: Colors.white,
-          ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
+        backgroundColor: context.theme.buttonColor,
+        child: Icon(
+          CupertinoIcons.cart,
+          color: Colors.white,
         ),
+      ),
       body: Column(children: <Widget>[
         Container(
           padding: const EdgeInsets.all(15.0),

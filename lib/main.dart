@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalogue/pages/cart_page.dart';
 // ignore: unused_import
 import 'package:flutter_catalogue/pages/home.dart';
 import 'package:flutter_catalogue/pages/login_page.dart';
@@ -18,7 +19,8 @@ class OTLogin extends StatelessWidget {
       routes: {
         "/": (context) => Login_Page(),
         MyRoutes.homeRoute: (context) => Homepage(),
-        MyRoutes.loginRoute: (context) => Login_Page()
+        MyRoutes.loginRoute: (context) => Login_Page(),
+        MyRoutes.cartRoute: (context) => CartPage(),
       },
     );
   }
