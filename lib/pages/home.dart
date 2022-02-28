@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_catalogue/models/catalogue.dart';
 import 'package:flutter_catalogue/widgets/drawer.dart';
-import 'package:flutter_catalogue/pages/item_buy_detail.dart'
-    show ItemBuyDetail;
+import 'package:flutter_catalogue/pages/item_buy_detail.dart';
 import 'package:velocity_x/velocity_x.dart';
 import 'package:flutter_catalogue/utils/MyRoutes.dart';
+import 'package:flutter_catalogue/widgets/home_widgets/add_to_cart.dart';
 
 class Homepage extends StatefulWidget {
   @override
@@ -44,7 +44,7 @@ class _HomepageState extends State<Homepage> {
       backgroundColor: context.canvasColor,
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-        backgroundColor: context.theme.buttonColor,
+        backgroundColor: context.theme.hintColor,
         child: Icon(
           CupertinoIcons.cart,
           color: Colors.white,
@@ -160,24 +160,14 @@ class CatalogItem extends StatelessWidget {
                 buttonPadding: EdgeInsets.zero,
                 children: [
                   "\$${catalog.price}".text.bold.xl.make(),
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
-                          Color(0XFFC6FF00),
-                        ),
-                        shape: MaterialStateProperty.all(
-                          StadiumBorder(),
-                        )),
-                    child: "Buy".text.make(),
-                  )
+                  AddToCart(catalog: catalog)
                 ],
               ).pOnly(right: 8.0)
             ],
           ))
         ],
       ),
-    ).blue100.rounded.square(150).make().py12();
+    ).blue100.rounded.square(140).make().py12();
   }
 }
 
